@@ -10,7 +10,7 @@ export default function CardPopular() {
   const [popular, setPopular] = useState([]);
 
   const fetchCards = async () => {
-    const data = await axios.get('http://localhost:3500/explore');
+    const data = await axios.get('https://openlake-rr6xf.ondigitalocean.app/openlake-api/explore');
 
     setPopular(data.data.fivePopular);
   };

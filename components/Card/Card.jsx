@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 export default function Card() {
   const [nft, setNft] = useState([]);
   const fetchCards = async () => {
-    const data = await axios.get('http://localhost:3500/explore');
+    const data = await axios.get('https://openlake-rr6xf.ondigitalocean.app/openlake-api/explore');
 
     setNft(data.data.NFTs);
   };

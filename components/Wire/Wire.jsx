@@ -17,7 +17,7 @@ export default function Wire() {
   const getBalance = async () => {
     const configuration = {
       method: 'post',
-      url: 'http://localhost:3500/currentBalance',
+      url: 'https://openlake-rr6xf.ondigitalocean.app/openlake-api/currentBalance',
       data: {
         user_id: localStorage.getItem('user_id'),
         profile_id: localStorage.getItem('profile_id'),
@@ -38,7 +38,7 @@ export default function Wire() {
       let amountInt = parseFloat(amount)
         const configuration = {
             method: 'post',
-            url: 'http://localhost:3500/wire',
+            url: 'https://openlake-rr6xf.ondigitalocean.app/openlake-api/wire',
             data: {
                 user_id: localStorage.getItem('user_id'),
                 profile_id: localStorage.getItem('profile_id'),
@@ -65,7 +65,7 @@ export default function Wire() {
       let amountInt = parseFloat(amount)
         const configuration = {
             method: 'post',
-            url: 'http://localhost:3500/wire',
+            url: 'https://openlake-rr6xf.ondigitalocean.app/openlake-api/wire',
             data: {
                 user_id: localStorage.getItem('user_id'),
                 profile_id: localStorage.getItem('profile_id'),

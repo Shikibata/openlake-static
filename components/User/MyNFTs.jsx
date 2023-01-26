@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
-///Lolllll
+
 
 export default function MyNFTs({ ...profile }) {
   const [nft, setNft] = useState([]);
@@ -14,7 +14,7 @@ export default function MyNFTs({ ...profile }) {
 
   const fetchCards = async () => {
     const data = await axios.get(
-      `http://localhost:3500/myNFTs/${profile._id}`,
+      `https://openlake-rr6xf.ondigitalocean.app/openlake-api/myNFTs/${profile._id}`,
       { params: { id: profile._id } }
     );
     setNft(data.data);

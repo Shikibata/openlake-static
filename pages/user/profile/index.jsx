@@ -16,7 +16,7 @@ export default function Index() {
   const fetchUser = async () => {
     const configuration = {
       method: 'post',
-      url: 'http://localhost:3500/profile',
+      url: 'https://openlake-rr6xf.ondigitalocean.app/openlake-api/profile',
       data: {
         user_id: localStorage.getItem('user_id'),
         profile_id: localStorage.getItem('profile_id'),
@@ -36,7 +36,7 @@ export default function Index() {
   const handleLogout = async () => {
     const configuration = {
       method: 'post',
-      url: 'http://localhost:3500/auth/logout',
+      url: 'https://openlake-rr6xf.ondigitalocean.app/openlake-api/auth/logout',
       data: {
         user_id: localStorage.getItem('user_id'),
         profile_id: localStorage.getItem('profile_id'),

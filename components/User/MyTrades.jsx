@@ -11,7 +11,7 @@ export default function MyNFTs({ ...profile }) {
 
   const fetchTrades = async () => {
     const data = await axios.get(
-        `http://localhost:3500/myTrades/${profile._id}`,
+        `https://openlake-rr6xf.ondigitalocean.app/openlake-api/myTrades/${profile._id}`,
         {params: {id: profile._id}}
     );
     setTrades(data.data);

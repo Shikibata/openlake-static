@@ -16,7 +16,7 @@ export default function Index() {
 
     const configuration = {
       method: 'post',
-      url: 'http://localhost:3500/auth',
+      url: 'https://openlake-rr6xf.ondigitalocean.app/openlake-api/auth',
       data: {
         email,
         password,

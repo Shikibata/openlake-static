@@ -24,7 +24,7 @@ export default function Index() {
 
   const configurationUpdate = {
     method: 'patch',
-    url: 'http://localhost:3500/users',
+    url: 'https://openlake-rr6xf.ondigitalocean.app/openlake-api/users',
     data: {
       _id,
       email,
@@ -49,7 +49,7 @@ export default function Index() {
   const fetchUser = async () => {
     const configuration = {
       method: 'post',
-      url: 'http://localhost:3500/profile',
+      url: 'https://openlake-rr6xf.ondigitalocean.app/openlake-api/profile',
       data: {
         user_id: localStorage.getItem('user_id'),
         profile_id: localStorage.getItem('profile_id'),

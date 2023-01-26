@@ -12,7 +12,7 @@ export default function CardNewest() {
   const [newest, setNewest] = useState([]);
 
   const fetchCards = async () => {
-    const data = await axios.get('http://localhost:3500/explore');
+    const data = await axios.get('https://openlake-rr6xf.ondigitalocean.app/openlake-api/explore');
 
     setNewest(data.data.fiveNewest);
   };

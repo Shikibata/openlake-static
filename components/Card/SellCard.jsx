@@ -19,7 +19,7 @@ export default function BuyCard() {
 
     const configuration = {
       method: 'post',
-      url: 'http://localhost:3500/closeTrade',
+      url: 'https://openlake-rr6xf.ondigitalocean.app/openlake-api/closeTrade',
       data: {
         nftSell,
         profile_id: localStorage.getItem('profile_id'),
@@ -37,7 +37,7 @@ export default function BuyCard() {
   };
 
   const fetchCard = async () => {
-    const data = await axios.get(`http://localhost:3500/explore/${_id}`);
+    const data = await axios.get(`https://openlake-rr6xf.ondigitalocean.app/openlake-api/explore/${_id}`);
     setNft(data.data);
   };
   useEffect(() => {

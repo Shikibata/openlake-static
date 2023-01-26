@@ -15,7 +15,7 @@ export default function SingleCard() {
   const [loggedUserID, setLoggedUserID] = useState('');
 
   const fetchCard = async () => {
-    const data = await axios.get(`http://localhost:3500/explore/${_id}`);
+    const data = await axios.get(`https://openlake-rr6xf.ondigitalocean.app/openlake-api/explore/${_id}`);
     setNft(data.data);
   };
 
