@@ -5,6 +5,8 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
+///Lolllll
+
 export default function MyNFTs({ ...profile }) {
   const [nft, setNft] = useState([]);
   const router = new useRouter();
