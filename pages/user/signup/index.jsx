@@ -48,6 +48,7 @@ export default function Index() {
           id="firstName"
           name="firstName"
           onChange={(e) => setFirstName(e.target.value)}
+          required
         />
         <label htmlFor="lastName">Lastname</label>
         <input
@@ -55,6 +56,7 @@ export default function Index() {
           id="lastName"
           name="lastName"
           onChange={(e) => setLastName(e.target.value)}
+          required
         />
         <label htmlFor="address">Address</label>
         <input
@@ -62,6 +64,7 @@ export default function Index() {
           id="address"
           name="address"
           onChange={(e) => setAddress(e.target.value)}
+          required
         />
         <label htmlFor="email">Email</label>
         <input
@@ -76,6 +79,7 @@ export default function Index() {
           id="password"
           name="password"
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
         <button type="submit" onClick={(e) => handleSubmit(e)}>
           Sign up
