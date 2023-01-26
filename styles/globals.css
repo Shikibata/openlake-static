@@ -46,6 +46,13 @@ a {
 
 .theme-select {
   height: 100%;
+  cursor: pointer;
+
+}
+
+.theme-select:hover {
+  border-color: var(--main)
+
 }
 
 .swiper {
