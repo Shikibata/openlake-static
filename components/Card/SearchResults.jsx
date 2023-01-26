@@ -16,7 +16,7 @@ export default function SearchResults() {
   const fetchCards = async () => {
     const search = localStorage.getItem('search');
     const data = await axios.get(
-      `https://openlake-rr6xf.ondigitalocean.app/openlake-api/search/${search}`
+      `https://openlake-rr6xf.ondigitalocean.app/openlake-api/explore/search/${search}`
     );
     setNft(data.data);
   };

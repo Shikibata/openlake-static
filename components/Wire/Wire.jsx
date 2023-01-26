@@ -47,6 +47,7 @@ export default function Wire() {
             },
           };
         // prevent the form from refreshing the whole page
+        if(amountInt > 0) {
         axios(configuration)
           .then((result) => {
             getBalance()
@@ -56,7 +57,10 @@ export default function Wire() {
           })
           .catch((error) => {
             error = new Error();
-          });
+          });}
+          else {
+            alert("Only positive numbers are allowed.")
+          }
     }
 
   //withdraw funds
@@ -74,6 +78,7 @@ export default function Wire() {
             },
           };
         // prevent the form from refreshing the whole page
+        if(amountInt > 0) {
         axios(configuration)
           .then((result) => {
             getBalance()
@@ -83,7 +88,10 @@ export default function Wire() {
           })
           .catch((error) => {
             error = new Error();
-          });
+          });}
+          else {
+            alert("Only positive numbers are allowed.")
+          }
     }
 
   useEffect(() => {
