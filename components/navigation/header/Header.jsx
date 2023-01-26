@@ -82,7 +82,10 @@ export default function Header() {
               Explore
             </a>
             <a href={'/user/login'} className={'nav__link'}>
-              Connect
+              Login
+            </a>
+            <a href={'/user/signup'} className={'nav__link'}>
+              Sign up
             </a>
           </NavItems>
         )}
