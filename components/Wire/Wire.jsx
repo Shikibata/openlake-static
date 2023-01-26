@@ -162,7 +162,7 @@ const ContainerWire = styled.div`
   height: 100vh;
 
   div {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -174,7 +174,7 @@ const ContainerWire = styled.div`
     margin: 0;
     align-items: center;
     font-size: 1.1rem;
-    width: 20%;
+    width: 6rem;
     text-align: center;
     padding: 0.5rem;
     border: none;
@@ -202,8 +202,5 @@ const ContainerWire = styled.div`
     :focus {
       outline-color: var(--main);
     }
-
   }
-
-  
 `;
