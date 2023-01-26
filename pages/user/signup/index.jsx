@@ -157,7 +157,7 @@ const RightContainer = styled.div`
 
   @media (min-width: 578px) {
     max-width: 75%;
-    margin: 125px auto;
+    margin: 60px auto;
   }
 
   @media (min-width: 912px) {
