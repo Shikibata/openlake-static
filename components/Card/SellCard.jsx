@@ -59,7 +59,7 @@ export default function BuyCard() {
             <button type="submit" onClick={(e) => handleSubmit(e)}>
               Yes
             </button>
-            <a href="../explore">No</a>
+            <a className={"LinkNo"} href="../explore">No</a>
           </div>
         )}
       </ContainerTrade>
@@ -95,7 +95,7 @@ const ContainerTrade = styled.div`
     margin-top: 2rem;
   }
 
-  a,
+  .LinkNo,
   button {
     margin: 0;
     align-items: center;
