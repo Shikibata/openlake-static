@@ -123,7 +123,7 @@ export default function Index() {
 
 const ProfileContainer = styled.div`
   height: auto;
-  padding: 0rem 2rem;
+  padding: 0rem;
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -165,12 +165,17 @@ const Infos = styled.div`
     }
 
     h4 {
+      padding-left: 0.2rem;
       font-size: 1em;
       width: 20%;
     }
 
     span {
       font-size: 1em;
+    }
+    
+    @media (max-width: 512px) {
+      font-size: 0.8rem;
     }
   }
 `;
