@@ -10,7 +10,8 @@
     "lint": "next lint",
     "format": "prettier --check --ignore-path .gitignore .",
     "format:fix": "prettier --write --ignore-path .gitignore .",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "export": "npm run build && next export -o _static",
   },
   "dependencies": {
     "@emotion/react": "11.10.5",
