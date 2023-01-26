@@ -67,11 +67,6 @@ export default function Index() {
           Login
         </button>
         <a href={'/user/signup'}>Don't have an account already ?</a>
-        {login ? (
-          <p className="text-success">You Are Logged in Successfully</p>
-        ) : (
-          <p className="text-danger">You Are Not Logged in</p>
-        )}
       </FormContainer>
     );
   };
