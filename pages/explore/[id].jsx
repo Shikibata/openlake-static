@@ -2,7 +2,7 @@ import PrimaryLayout from '../../components/layouts/primary/PrimaryLayout';
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
-import SingleCard from '../../components/Card/singleCard';
+import SingleCard from '../../components/Card/SingleCard';
 
 export default function DisplaySingleCard() {
   return (
