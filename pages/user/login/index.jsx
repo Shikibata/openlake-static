@@ -52,6 +52,7 @@ export default function Index() {
           name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
         <label htmlFor="password">Password</label>
         <input
@@ -60,6 +61,7 @@ export default function Index() {
           name="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
         <button type="submit" onClick={(e) => handleSubmit(e)}>
           Login
