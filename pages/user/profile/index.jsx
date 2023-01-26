@@ -7,6 +7,8 @@ import Link from 'next/link';
 import { FaEthereum } from 'react-icons/fa';
 import MyNFTs from '../../../components/User/MyNFTs';
 import MyTrades from '../../../components/User/MyTrades';
+import {FiLogOut, FiEdit2} from "react-icons/fi";
+import {SiEthereum} from "react-icons/si"
 
 export default function Index() {
   const [user, setUser] = useState({});
@@ -69,7 +71,7 @@ export default function Index() {
       <ProfileContainer>
         <Logout>
           <button type="button" onClick={() => handleLogout()}>
-            Logout
+            <FiLogOut/>Logout
           </button>
           <Link
             href={{
@@ -77,7 +79,7 @@ export default function Index() {
               query: { user_id: user._id, profile_id: profile._id },
             }}
           >
-            Modify
+            <FiEdit2/>Modify
           </Link>
         </Logout>
         <Infos>
@@ -108,7 +110,7 @@ export default function Index() {
                 query: { user_id: user._id, profile_id: profile._id },
               }}
             >
-              Add/withdraw funds
+              <SiEthereum/>Add/withdraw funds
             </Withdraw>
           </div>
         </Infos>
@@ -181,7 +183,7 @@ const Infos = styled.div`
 `;
 
 const Logout = styled.div`
-  padding-top: 2rem;
+  padding: 2rem 0rem;
   display: flex;
   justify-content: space-between;
   width: 50%;
@@ -193,6 +195,8 @@ const Logout = styled.div`
     border: none;
     background: none;
     font-size: 1em;
+    display: flex;
+    align-items: center
   }
 
   button:hover,
