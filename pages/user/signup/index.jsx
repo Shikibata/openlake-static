@@ -58,7 +58,7 @@ export default function Index() {
           onChange={(e) => setLastName(e.target.value)}
           required
         />
-        <label htmlFor="address">Address</label>
+        <label htmlFor="Country">Address</label>
         <input
           type="text"
           id="address"
@@ -85,11 +85,6 @@ export default function Index() {
           Sign up
         </button>
         <a href={'/user/login'}>Already have an account ?</a>
-        {register ? (
-          <p className="text-success">You Are Registered Successfully</p>
-        ) : (
-          <p className="text-danger">You Are Not Registered</p>
-        )}
       </FormContainer>
     );
   };
