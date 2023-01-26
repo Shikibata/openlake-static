@@ -64,7 +64,7 @@ export default function BuyCard() {
             <button type="submit" onClick={(e) => handleSubmit(e)}>
               Yes
             </button>
-            <Link href={{ pathname: `/explore` }}>No</Link>
+            <Link className={"LinkNo"} href={{ pathname: `/explore` }}>No</Link>
           </div>
         )}
       </ContainerTrade>
@@ -99,7 +99,7 @@ const ContainerTrade = styled.div`
     gap: 2rem;
     margin-top: 2rem;
   }
-  a,
+  .LinkNo,
   button {
     margin: 0;
     align-items: center;
