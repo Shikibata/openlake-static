@@ -11,12 +11,6 @@ export default function Home() {
       <Container>
         <Left>
           <h2>Open</h2>
-          <SmallTextLeft>
-            <p>
-              Sign up now on OpenLake and discover a whole new world of
-              possibilities. Create your account and start exploring today!
-            </p>
-          </SmallTextLeft>
         </Left>
 
         <Middle>
@@ -78,24 +72,6 @@ const Left = styled.div`
       text-align: right;
       transform: rotate(-3deg);
     }
-  }
-`;
-
-const SmallTextLeft = styled.div`
-  display: flex;
-  position: absolute;
-  left: 2%;
-  right: 0%;
-  top: 15%;
-  transform: rotate(-5deg);
-
-  p {
-    font-size: 1.3em;
-  }
-
-  @media (min-width: 1024px) {
-    top: 15%;
-    right: 60%;
   }
 `;
 
