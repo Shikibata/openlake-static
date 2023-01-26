@@ -141,7 +141,6 @@ const NavMenuElements = styled.div`
   padding: 24px 16px;
   border-radius: 10px;
   background-color: var(--bg);
-  transition: all ease-in 300ms;
 
   @media (min-width: 768px) {
     position: unset;
@@ -159,7 +158,6 @@ const NavItems = styled.div`
   .nav__link {
     font-size: 18px;
     position: relative;
-    transition: ease-in-out 0.3s;
   }
 
   a {
