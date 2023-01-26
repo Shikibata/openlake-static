@@ -85,7 +85,7 @@ export default function Header() {
               Login
             </a>
             <a href={'/user/signup'} className={'nav__link'}>
-              Sign up
+              Register
             </a>
           </NavItems>
         )}
