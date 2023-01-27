@@ -33,11 +33,11 @@ export default function Index() {
       axios(configuration)
         .then((result) => {
           setRegister(true);
+          router.push('../user/login');
         })
         .catch((error) => {
           error = new Error();
         });
-      router.push('../user/login');
     };
 
     return (
@@ -48,7 +48,7 @@ export default function Index() {
           id="firstName"
           name="firstName"
           onChange={(e) => setFirstName(e.target.value)}
-          required
+          required={"required"}
         />
         <label htmlFor="lastName">Lastname</label>
         <input
@@ -56,22 +56,23 @@ export default function Index() {
           id="lastName"
           name="lastName"
           onChange={(e) => setLastName(e.target.value)}
-          required
+          required={"required"}
         />
-        <label htmlFor="Country">Address</label>
+        <label htmlFor="address">Country</label>
         <input
           type="text"
           id="address"
           name="address"
           onChange={(e) => setAddress(e.target.value)}
-          required
+          required={"required"}
         />
         <label htmlFor="email">Email</label>
         <input
           type="email"
           id="email"
           name="email"
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}          
+          required={"required"}
         />
         <label htmlFor="password">Password</label>
         <input
@@ -79,7 +80,7 @@ export default function Index() {
           id="password"
           name="password"
           onChange={(e) => setPassword(e.target.value)}
-          required
+          required={"required"}
         />
         <button type="submit" onClick={(e) => handleSubmit(e)}>
           Sign up
