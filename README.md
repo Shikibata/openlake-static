@@ -4,18 +4,17 @@
 
 -   [Project UI](#ui)
 -   [Functionnalities](#functionnalities)
--   [Tech Requirements](#tech-requirements)
--   [Resources](#resources)
+-   [Tech](#tech)
 -   [Deploy](#deploy)
-    -   [Clone](#clone-the-project)
 
 ---
 
 ## Description
 A website to fake the buying, selling, collection of NFT. Basically a NFT Marketplace. Like OpenSea.
 
+
 ## UI
-![Home Page - Phone view](./home-mobile.jpg)
+<img src="./home-mobile.jpg" height=400/><img src="./login-mobile.jpg" height=400/><img src="./login-desktop.jpg" height=400/><img src="./explore-desktop.jpg" height=400/>
 
 ## Functionnalities
 A basic list of functionality the app has:
@@ -38,18 +37,3 @@ A basic list of functionality the app has:
 ## Deploy
  Deployed on DigitalOcean [https://openlake-rr6xf.ondigitalocean.app/](https://openlake-rr6xf.ondigitalocean.app/)
 
- 
-### Clone the project
-
-To clone and run this application, you'll need [Git](https://git-scm.com/downloads) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone git@github.com:Shikibata/openlake-static.git
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm run dev
-```
