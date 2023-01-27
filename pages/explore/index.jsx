@@ -1,9 +1,11 @@
 import PrimaryLayout from '../../components/layouts/primary/PrimaryLayout';
 import styled from '@emotion/styled';
-import { motion } from 'framer-motion';
+import {motion, useScroll} from 'framer-motion';
 import Card from '../../components/Card/Card';
 import CardNewest from '../../components/Card/CardNewest';
 import CardPopular from '../../components/Card/CardPopular';
+import {FaArrowUp} from "react-icons/fa";
+import {useEffect, useState} from "react";
 
 export default function Index() {
   
