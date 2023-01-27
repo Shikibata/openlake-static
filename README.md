@@ -9,6 +9,10 @@
 
 ---
 
+## Creator
+- <a href="https://github.com/MaximeHoll">Maxime - Backend<a/>
+- <a href="https://github.com/Shikibata">Loïc - Frontend<a/>
+
 ## Description
 A website to fake the buying, selling, collection of NFT. Basically a NFT Marketplace. Like OpenSea.
 
@@ -34,8 +38,8 @@ A basic list of functionality the app has:
 - Mongoose
 ### Frontend
 - Next.js
-- Framer-motion
-- Styled-component
+- Framer Motion
+- Styled Components
 
 ## Deploy
  Deployed on DigitalOcean [https://openlake-rr6xf.ondigitalocean.app/](https://openlake-rr6xf.ondigitalocean.app/)
