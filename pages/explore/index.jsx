@@ -6,8 +6,34 @@ import CardNewest from '../../components/Card/CardNewest';
 import CardPopular from '../../components/Card/CardPopular';
 
 export default function Index() {
+  
+  const isBrowser = () => typeof window !== 'undefined';
+  const [showButton, setShowButton] = useState();
+
+  useEffect(() => {
+    const handleScrollButtonVisibility = () => {
+      window.pageYOffset > 300 ? setShowButton(true) : setShowButton(true);
+    };
+    window.addEventListener('scroll', handleScrollButtonVisibility);
+
+    return () => {
+      window.removeEventListener('scroll', handleScrollButtonVisibility);
+    }
+  }, []);
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  
   return (
     <PrimaryLayout>
+    {showButton && (
+          <div className={`scrollToTop`}>
+            <ButtonScroll className={`buttonscroll`} onClick={handleScrollToTop}>
+              <FaArrowUp/>
+            </ButtonScroll>
+          </div>
+      )}
       <ContainerNew>
         <h2>Newest</h2>
         <CardNew>
@@ -85,3 +111,13 @@ const CardTop = styled(motion.div)`
   margin-bottom: 5rem;
   justify-content: center;
 `;
+
+const ButtonScroll = styled.button`
+  position: fixed;
+  bottom: 3rem;
+  right: 1.75rem;
+  z-index: 50;
+  padding: 1rem;
+  cursor: pointer;
+`;
+
