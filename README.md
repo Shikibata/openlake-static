@@ -39,4 +39,7 @@ A basic list of functionality the app has:
 
 ## Deploy
  Deployed on DigitalOcean [https://openlake-rr6xf.ondigitalocean.app/](https://openlake-rr6xf.ondigitalocean.app/)
+ 
+## Backend repo link
+<a href="https://github.com/Shikibata/openlake-api">openlake-api<a/>
 
