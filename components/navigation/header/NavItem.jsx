@@ -14,6 +14,7 @@ const NavLink = styled.a`
     font-size: 18px;
     position: relative;
     transition: ease-in-out 0.8s;
+    z-index: 999
   }
 
   @media (min-width: 768px) {
