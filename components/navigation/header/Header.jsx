@@ -164,10 +164,14 @@ const NavItems = styled.div`
   }
 
   a {
-    margin-right: 50px;
+    margin-right: 20px;
   }
 
   @media (min-width: 768px) {
+    
+    a { 
+      margin-right: 50px;
+    }
     .nav__link::before {
       content: '';
       position: absolute;
