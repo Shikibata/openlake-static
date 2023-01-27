@@ -28,11 +28,14 @@ A basic list of functionality the app has:
 
 
 ## Tech 
-- Working with a Next.js and Node.js
-- Using npm for the packages.
-- Routing
-- Responsive design
-- Mangodb
+### Backend
+- MongoDB 
+- Node.js / express
+- Mongoose
+### Frontend
+- Next.js
+- Framer-motion
+- Styled-component
 
 ## Deploy
  Deployed on DigitalOcean [https://openlake-rr6xf.ondigitalocean.app/](https://openlake-rr6xf.ondigitalocean.app/)
