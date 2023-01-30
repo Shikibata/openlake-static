@@ -134,7 +134,6 @@ const NavMenuElements = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
   position: fixed;
   top: 60px;
   width: 288px;
